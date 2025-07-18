@@ -1,0 +1,158 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+#logo img {
+    height: 70px;
+    width: 85px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('fastival2.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Festival Section */
+.festival-section {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.festival-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: scale(1.02);
+}
+
+.festival-card img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    height: 100%;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.content h2 {
+    color: #ff6600;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .festival-section {
+        padding: 30px 20px;
+    }
+
+    .festival-card {
+        flex-direction: column;
+    }
+
+    .festival-card img {
+        width: 100%;
+    }
+}

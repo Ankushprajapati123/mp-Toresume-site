@@ -1,0 +1,183 @@
+/* ========== RESET & BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+#navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+#logo img {
+  height: 70px;
+  width: 85px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ========== PAGE HEADER ========== */
+.top_section {
+  padding-top: 120px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #222;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ========== SECTION STYLES ========== */
+#one, #two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* ========== IMAGE STYLING ========== */
+.card img,
+.card1 img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  transition: 0.4s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img:hover,
+.card1 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 34, 255, 0.3);
+}
+
+/* ========== TEXT CONTENT ========== */
+.pera1,
+.pera2 {
+  flex: 1 1 500px;
+  font-size: 1.2rem;
+  padding: 15px;
+  background: #fefefe;
+  border-left: 4px solid #ffa600;
+  border-radius: 8px;
+  text-align: justify;
+  transition: transform 0.3s ease;
+}
+
+.pera1:hover,
+.pera2:hover {
+  transform: translateY(-3px);
+}
+
+/* ========== HIGHLIGHTED TEXT ========== */
+#bheda,
+#gwa,
+#bargi,
+#Dhuandhar,
+#madan,
+.cons,
+.best,
+.Location,
+.rajgond,
+.pur,
+.sign,
+.tras,
+.his,
+.Ganga,
+.popu,
+#shiva,
+.Kachnar,
+.Festivals {
+  font-weight: bold;
+  color: #ff7b00;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#bheda:hover,
+#gwa:hover,
+#shiva:hover,
+.tras:hover,
+.his:hover,
+.Ganga:hover,
+.popu:hover {
+  color: #0066ff;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+  }
+
+  #navbar:hover ul {
+    display: flex;
+  }
+
+  #one, #two {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .pera1, .pera2 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  #heading {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+}

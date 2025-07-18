@@ -1,0 +1,245 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+#logo img {
+    height: 70px;
+    width: 85px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* MAIN SECTION */
+.main_section {
+    background-image: url('bg0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.pra {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    max-width: 700px;
+    line-height: 1.3;
+    margin-top: 330px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+/* HIGHLIGHTED TEXT */
+.special_1,
+.special_2,
+.special_3 {
+    color: hsl(56, 100%, 49%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.special_1:hover,
+.special_2:hover,
+.special_3:hover {
+    color: hsl(116, 100%, 49%);
+    cursor: pointer;
+}
+
+/* SECTION DESIGN */
+#one,
+#two {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img,
+.card1 img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img:hover,
+.card1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 165, 0, 0.4);
+}
+
+.pera1,
+.pera2 {
+    flex: 1 1 500px;
+    background-color: #ffffff;
+    border-left: 5px solid #ffa600;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    transition: transform 0.3s;
+}
+
+.pera1:hover,
+.pera2:hover {
+    transform: translateY(-5px);
+}
+
+/* ATTRACTIVE BOX CLASS */
+.attractive-box {
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    font-size: 1.3rem;
+    color: #222;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 30px auto;
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attractive-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(255, 80, 80, 0.4);
+}
+
+/* HIGHLIGHT COLORS */
+#bheda,
+.tras,
+.his,
+.Panna,
+.diamond,
+.temple {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #ff7b00;
+}
+
+#bheda:hover,
+.tras:hover,
+.his:hover {
+    color: #0022ff;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #navbar:hover ul {
+        display: flex;
+    }
+
+    .main_section {
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .pra {
+        font-size: 1.2rem;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #one,
+    #two {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .pera1,
+    .pera2 {
+        width: 100%;
+        font-size: 1.1rem;
+        margin: 10px 0;
+    }
+
+    .card img,
+    .card1 img {
+        width: 100%;
+        height: auto;
+    }
+}
