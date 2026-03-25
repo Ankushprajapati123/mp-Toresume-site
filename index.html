@@ -2,80 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MP Turesume</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MP Tourism</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- NAVIGATION -->
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo5.jpeg" alt="">
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Places_to_Visit.html">Places to Visit</a></li>
-            <li><a href="plane.html">Plan to your Trip</a></li>
-            <li><a href="Festivals.html">Fastivals</a></li>
-            <li><a href="contect.html">Contect Us</a></li>
-        </ul>
-    </nav>
 
-    <!-- MAIN SECTION -->
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
 
-    <div class="main_section">
-        <p class="pra">
-            Madhya Pradesh, known as the <span class="special_1">Heart Of India</span> is a popular tourist destination
-            with rich culture, history, and abundant wildlife. It boasts UNESCO World Heritage Sites like <span
-                class="special_2">Khajuraho</span> and <span class="special_3">Sanchi</span>, stunning temples like
-            Mahakaleshwar in Ujjain, and numerous national parks like Kanha and Bandhavgarh, making it a haven for
-            wildlife enthusiasts.
+<div class="logo">
+<img src="logo5.jpeg" alt="logo">
+</div>
 
-        </p>
-    </div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="Places_to_Visit.html">Places</a></li>
+<li><a href="plane.html">Plan Trip</a></li>
+<li><a href="Festivals.html">Festivals</a></li>
+<li><a href="contect.html">Contact</a></li>
+</ul>
 
-    <!-- ATTRACTIVE BOX -->
-    <div class="attractive-box">
-        Explore the wonders of Madhya Pradesh — a timeless land of spirituality, nature, and historic charm.
-    </div>
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
 
-    <!-- SECTION ONE -->
-    <main id="one">
-        <div class="card">
-            <a href="jbl.html"><img src="jbl.jpeg" alt="Bhedaghat Marble Rocks" /></a>
-        </div>
-        <p class="pera1">
-            <span id="bheda">Bhedaghat</span>,
-            located in Madhya Pradesh, is a town renowned for its stunning marble rocks and the Dhuandhar Falls on the
-            Narmada River.
-            <br /><br />
-            <span class="tras">Destination:</span> The nearest railway station is Bhedaghat Railway Station. Jabalpur is
-            just 28 km away and accessible by auto or cab.
-            <br /><br />
-            <span class="his">History:</span> Once part of the ancient Tripuri Kingdom under the Kalchuri dynasty,
-            Bhedaghat has long been revered for its spiritual and natural significance.
-        </p>
-    </main>
+</nav>
 
-    <!-- SECTION TWO -->
-    <main id="two">
-        <p class="pera2">
-            <span class="Panna">Panna</span>,
-            located in Madhya Pradesh, is famous for both its <span class="diamond">diamond</span> mines and spiritual
-            heritage.
-            <br /><br />
-            It is the only region in India with active diamond mining, managed by the National Mineral Development
-            Corporation (NMDC).
-            <br /><br />
-            The <span class="temple">Banke Bihari Temple</span>, where <span class="temple">Mahamati Prannath</span>
-            preached, makes it a key pilgrimage destination.
-        </p>
-        <div class="card1">
-            <a href="panna.html"><img src="panna.jpeg" alt="Panna Diamond Mines and Temples" /></a>
-        </div>
-    </main>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<p>
+Madhya Pradesh, known as the <span class="highlight">Heart Of India</span>
+is a popular tourist destination with rich culture, history and wildlife.
+
+It includes UNESCO sites like <span class="highlight">Khajuraho</span>
+and <span class="highlight">Sanchi</span> with famous temples and
+beautiful national parks.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= ATTRACTIVE BOX ================= -->
+
+<section class="tagline">
+Explore the wonders of Madhya Pradesh — a timeless land of spirituality,
+nature and historic charm.
+</section>
+
+
+<!-- ================= SECTION ONE ================= -->
+
+<section class="section">
+
+<div class="card">
+
+<img src="jbl.jpeg" alt="Bhedaghat">
+
+<div class="card-text">
+
+<h2>Bhedaghat</h2>
+
+<p>
+Bhedaghat is famous for marble rocks and the beautiful
+Dhuandhar waterfall on the Narmada river.
+</p>
+
+<p>
+<b>Destination:</b> Nearest railway station is Bhedaghat.
+Jabalpur is only 28km away.
+</p>
+
+<p>
+<b>History:</b> Part of ancient Tripuri kingdom
+under Kalchuri dynasty.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SECTION TWO ================= -->
+
+<section class="section reverse">
+
+<div class="card">
+
+<img src="panna.jpeg" alt="Panna">
+
+<div class="card-text">
+
+<h2>Panna</h2>
+
+<p>
+Panna is famous for diamond mines and its religious heritage.
+</p>
+
+<p>
+It is the only place in India where diamonds are mined
+commercially by NMDC.
+</p>
+
+<p>
+Banke Bihari Temple is an important pilgrimage site.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
 </body>
-
 </html>
